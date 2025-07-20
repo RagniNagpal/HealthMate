@@ -17,12 +17,11 @@ const Navbar = ({ toggleTheme, isDarkTheme }) => {
         <a href="#" className="hover:underline">About</a>
         <a href="#" className="hover:underline">Feature</a>
         <a href="/contact" className="hover:underline">Contact</a>
-        <button
-          onClick={toggleTheme}
-          className="rounded px-3 py-1 border bg-white text-black text-sm"
-        >
-          {isDarkTheme ? '☀️ Light Mode' : '🌙 Dark Mode'}
-        </button>
+        <button onClick={toggleTheme} className="px-4 py-2 rounded bg-blue-500 text-white">
+  {isDarkTheme ? 'Light Mode' : 'Dark Mode'}
+</button>
+
+        
       </div>
     </div>
   );
